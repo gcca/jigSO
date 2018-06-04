@@ -1,0 +1,201 @@
+Archive member included because of file (symbol)
+
+bibl/libbibl.a(errn.o)        nucleo/nucleo.o (errn)
+bibl/libbibl.a(tipoc.o)       nucleo/nucleo.o (_tipoc)
+bibl/libbibl.a(vcs.o)         nucleo/nucleo.o (vcs_lon)
+
+Allocating common symbols
+Common symbol       size              file
+
+errn                0x4               bibl/libbibl.a(errn.o)
+_y                  0x4               nucleo/nucleo.o
+_x                  0x4               nucleo/nucleo.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x00000000     0x30be
+ *(.text)
+ .text          0x00000000      0x8b8 nucleo/cabeza.o
+                0x00000000                nucleo
+                0x00000310                tdg
+                0x00000730                tdi
+ .text          0x000008b8     0x23d1 nucleo/nucleo.o
+                0x000008b8                hallar_idpn
+                0x00000920                con_selec
+                0x000009df                con_limpiar
+                0x00000aaf                con_desplaz
+                0x00000b1d                con_desplarr
+                0x00000b1e                guard_cur
+                0x00000b33                con_impr
+                0x00000cdc                con_inic
+                0x00000d8c                errdiv
+                0x00000d93                excepdep
+                0x00000d9a                intnenm
+                0x00000da1                ptorup
+                0x00000da8                desb
+                0x00000daf                chlim
+                0x00000db6                codnval
+                0x00000dbd                coprocndisp
+                0x00000dc4                fallodbl
+                0x00000dcb                reserv4coproc3
+                0x00000dd2                setnval
+                0x00000dd9                segmndisp
+                0x00000de0                exceppila
+                0x00000de7                proteccgen
+                0x00000e0c                fallopag
+                0x00000e13                errupf
+                0x00000e1a                chalin
+                0x00000e21                reservado
+                0x000010be                escribvp
+                0x00001510                ta_p2
+                0x00001574                ta_p3
+                0x000015d8                ta_p4
+                0x00001672                ta_p5
+                0x000016d6                ta_p1
+                0x0000177d                inicio
+                0x00001780                bifurcar
+                0x000017af                interpr
+                0x00001e88                n_impr
+                0x00001ed4                proceso
+                0x00001f5f                proc_inic
+                0x000020a0                tecl_interrupcion
+                0x0000211c                morir
+                0x0000223d                fr_errdiv
+                0x00002258                fr_excepdep
+                0x00002273                fr_intnenm
+                0x0000228e                fr_ptorup
+                0x000022a9                fr_desb
+                0x000022c4                fr_chlim
+                0x000022df                fr_codnval
+                0x000022fa                fr_coprocndisp
+                0x00002315                fr_fallodbl
+                0x00002330                fr_reserv4coproc3
+                0x0000234b                fr_setnval
+                0x00002366                fr_segmndisp
+                0x00002381                fr_exceppila
+                0x0000239c                fr_proteccgen
+                0x000023b7                fr_fallopag
+                0x000023d2                fr_errupf
+                0x000023ed                fr_chalin
+                0x00002408                fr_reservado
+                0x00002423                trampas_inic
+                0x000026d8                tti_escrib
+                0x00002875                tti_leer
+                0x00002901                tti_interrupcion
+                0x00002a18                tti_inic
+                0x00002a24                sis_salir
+                0x00002a3a                sis_matar
+                0x00002ae2                sis_inic
+                0x00002b18                sis_llamada
+                0x00002b49                cron_interrupcion
+                0x00002b62                sis_bifurcar
+                0x00002b64                subproc_crear
+ *fill*         0x00002c89        0x3 00
+ .text          0x00002c8c      0x339 mem/mem.o
+                0x00002c8c                asigml
+                0x00002cf0                md_asignar
+                0x00002d64                md_liberar
+                0x00002d8f                md_inic
+                0x00002dd4                mem_obtpagt
+                0x00002e4d                mem_libpagt
+                0x00002eab                mem_coppagt
+                0x00002efc                calcmem
+                0x00002f57                mem_inic
+ *fill*         0x00002fc5        0x3 00
+ .text          0x00002fc8        0x0 bibl/libbibl.a(errn.o)
+ .text          0x00002fc8        0x0 bibl/libbibl.a(tipoc.o)
+ .text          0x00002fc8       0xf6 bibl/libbibl.a(vcs.o)
+                0x00002fc8                vcs_lon
+                0x00002fe2                vcs_cop
+                0x00002ffd                vcs_comp
+                0x00003027                vcs_concat
+                0x00003050                mem_cop
+                0x0000306f                mem_pon
+                0x00003093                mem_comp
+
+.rdata
+ *(.rdata)
+
+.rodata         0x000030be      0x59b
+ *(.rodata)
+ *fill*         0x000030be        0x2 00
+ .rodata        0x000030c0      0x533 nucleo/nucleo.o
+ *fill*         0x000035f3        0x1 00
+ .rodata        0x000035f4       0x65 mem/mem.o
+
+.data           0x00003659      0xa47
+ *(.data)
+ *fill*         0x00003659        0x3 00
+ .data          0x0000365c        0x0 nucleo/cabeza.o
+ *fill*         0x0000365c        0x4 00
+ .data          0x00003660      0x93c nucleo/nucleo.o
+                0x00003760                temp
+                0x00003764                mkmk
+                0x00003780                inic
+                0x00003820                tarea
+                0x00003920                tarea_act
+                0x00003940                tti_tabla
+                0x00003f80                cola_tabla
+                0x00003f8c                sis_tabla
+ .data          0x00003f9c        0x4 mem/mem.o
+ .data          0x00003fa0        0x0 bibl/libbibl.a(errn.o)
+ .data          0x00003fa0      0x100 bibl/libbibl.a(tipoc.o)
+                0x00003fa0                _tipoc
+ .data          0x000040a0        0x0 bibl/libbibl.a(vcs.o)
+
+.sbss
+ *(.sbss)
+ *(.scommon)
+
+.bss            0x000040a0      0x238
+                0x000040a0                _ibss = .
+ *(.bss)
+ .bss           0x000040a0        0x0 nucleo/cabeza.o
+ .bss           0x000040a0      0x224 nucleo/nucleo.o
+                0x000040a0                idp
+                0x000040ac                mico
+                0x000040b0                muka
+                0x000040b4                psal
+                0x000042c0                tarea_i
+ .bss           0x000042c4        0x8 mem/mem.o
+ .bss           0x000042cc        0x0 bibl/libbibl.a(errn.o)
+ .bss           0x000042cc        0x0 bibl/libbibl.a(tipoc.o)
+ .bss           0x000042cc        0x0 bibl/libbibl.a(vcs.o)
+ *(COMMON)
+ COMMON         0x000042cc        0x8 nucleo/nucleo.o
+                0x000042cc                _y
+                0x000042d0                _x
+ COMMON         0x000042d4        0x4 bibl/libbibl.a(errn.o)
+                0x000042d4                errn
+                0x000042d8                _fbss = .
+LOAD nucleo/cabeza.o
+LOAD nucleo/nucleo.o
+LOAD mem/mem.o
+LOAD bibl/libbibl.a
+OUTPUT(nucleo.bin binary)
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 nucleo/nucleo.o
+ .note.GNU-stack
+                0x00000000        0x0 mem/mem.o
+ .note.GNU-stack
+                0x00000000        0x0 bibl/libbibl.a(errn.o)
+ .note.GNU-stack
+                0x00000000        0x0 bibl/libbibl.a(tipoc.o)
+ .note.GNU-stack
+                0x00000000        0x0 bibl/libbibl.a(vcs.o)
+
+.comment        0x00000000      0x132
+ .comment       0x00000000       0xc6 nucleo/nucleo.o
+ .comment       0x000000c6       0x36 mem/mem.o
+ .comment       0x000000fc       0x12 bibl/libbibl.a(errn.o)
+ .comment       0x0000010e       0x12 bibl/libbibl.a(tipoc.o)
+ .comment       0x00000120       0x12 bibl/libbibl.a(vcs.o)
